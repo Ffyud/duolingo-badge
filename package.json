@@ -1,0 +1,19 @@
+{
+  "name": "duolingo-badge",
+  "version": "1.0.0",
+  "description": "A web component made with the Lib Library that can show a Duolingo user score.",
+  "main": "duolingo-badge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ffyud/duolingo-badge.git"
+  },
+  "author": "D.C. Duyff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ffyud/duolingo-badge/issues"
+  },
+  "homepage": "https://github.com/Ffyud/duolingo-badge#readme"
+}
