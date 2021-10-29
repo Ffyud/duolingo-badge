@@ -1,7 +1,6 @@
 import {html, css, LitElement} from 'lit';
 
 export class DuolingoBadge extends LitElement {
-  static styles = css`div { color: blue }`;
 
   static properties = {
     user: { attribute: 'username' },
@@ -25,4 +24,13 @@ export class DuolingoBadge extends LitElement {
     return html`<div>${this.score}!</div>`;
   }
 }
+
+DuolingoBadge.styles = css`
+    div {
+      background: #74c200;
+      color: #FFF;
+      border-radius: 8px;
+      padding: 5px;
+    }
+  `;
 customElements.define('duolingo-badge', DuolingoBadge);
