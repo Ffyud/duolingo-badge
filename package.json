@@ -1,12 +1,16 @@
 {
   "name": "duolingo-badge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A web component made with the Lib Library that can show a Duolingo user score.",
   "main": "duolingo-badge.js",
+  "module": "duolingo-badge.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
+  "dependencies": {
+    "lit": "^2.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ffyud/duolingo-badge.git"
