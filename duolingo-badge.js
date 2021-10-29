@@ -1,19 +1,28 @@
 import {html, css, LitElement} from 'lit';
 
 export class DuolingoBadge extends LitElement {
-  static styles = css`p { color: blue }`;
+  static styles = css`div { color: blue }`;
 
   static properties = {
-    name: {type: String},
+    user: { attribute: 'username' },
+    score: {type: String}
   };
 
   constructor() {
+    url = "https://www.duolingo.com/users/" + this.user + "";
+    fetch(url).then(res => res.json())
+      .then(out => {
+        var score = out;
+        console.log(score)
+      }
+    );
+
     super();
-    this.name = 'Duolingo';
+    this.score = 'Duolingo';
   }
 
   render() {
-    return html`<p>Hello, ${this.name}!</p>`;
+    return html`<div>${this.score}!</div>`;
   }
 }
 customElements.define('duolingo-badge', DuolingoBadge);
